@@ -140,3 +140,5 @@ cython_debug/
 
 db.sqlite3
 .idea
+node_modules
+.serverless
