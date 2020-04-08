@@ -13,6 +13,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
+    - name: Setup Python
+      uses: actions/setup-python@v1.2.0
+      with:
+        python-version: 3.6
     - run: npm install
     - run: pip install pipenv
     - name: serverless deploy
