@@ -5,4 +5,4 @@ COPY Pipfile.lock .
 RUN pipenv install
 
 COPY . .
-RUN gunicorn almanac.wsgi
+CMD ["gunicorn", "almanac.wsgi"]
