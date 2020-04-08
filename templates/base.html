@@ -1,0 +1,21 @@
+{# Load the tag library #}
+{% load bootstrap4 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">The Almanac</a>
+    <ul class="navbar-nav mr-auto">
+        <li class="navbar-item"><a href="/">Home</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+{% block content %}
+{% endblock %}
+</div>
